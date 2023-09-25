@@ -30,11 +30,12 @@ int main() {
 
     printf("You can start guessing now\n");
     while (1){
+        iCounter++;
         scanf("%i",&iGuess);
         if (iGuess==rn){ printf("This guess was correct, you needed %i tries\n",iCounter); return 0;}
         else if (iGuess< rn) printf("This guess was incorrect, the random number is higher than %i\n",iGuess);
         else printf("This guess was incorrect, the random number is lower than %i\n",iGuess);
-        iCounter++;
+
     }
 
 }
